@@ -1,0 +1,26 @@
+{
+  "name": "test-doubles",
+  "version": "1.0.0",
+  "description": "Example tests using Jest mocks",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": ["jest", "test", "mock", "stub", "spy", "double", "dummy"],
+  "author": "Manchester Codes",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MCRcodes/test-doubles.git"
+  },
+  "homepage": "https://github.com/MCRcodes/test-doubles#readme",
+  "bugs": {
+    "url": "https://github.com/MCRcodes/test-doubles/issues"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "jest": "^22.4.2"
+  }
+}
