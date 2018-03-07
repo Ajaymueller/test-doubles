@@ -67,7 +67,7 @@ describe('renameAnimal', () => {
 
     kennel.renameAnimal('Susan', 'Alan');
 
-    expect(mockDog.rename).toHaveBeenCalledWith('Alan'); // asser that the spy has been called with correct arguments
+    expect(mockDog.rename).toHaveBeenCalledWith('Alan'); // assert that the spy has been called with correct arguments
     expect(mockCat.rename).not.toHaveBeenCalled(); // assert that this spy has not been called
   });
 });

@@ -6,7 +6,15 @@
   "scripts": {
     "test": "jest"
   },
-  "keywords": ["jest", "test", "mock", "stub", "spy", "double", "dummy"],
+  "keywords": [
+    "jest",
+    "test",
+    "mock",
+    "stub",
+    "spy",
+    "double",
+    "dummy"
+  ],
   "author": "Manchester Codes",
   "license": "ISC",
   "repository": {
