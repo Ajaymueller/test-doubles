@@ -41,6 +41,9 @@ describe('getBackwardsNames', () => {
     kennel.addAnimal(cat);
 
     expect(kennel.getBackwardsNames()).toEqual(['derF', 'nasuS']);
+    // this test is reliant on the behaviour of the animal class
+    // if we change the code in animal.js so Animal.getBackwardsName returns uppercase strings, it would break this test
+    // changing code in the animal class SHOULD NOT break our kennel test
   });
 });
 
@@ -56,6 +59,6 @@ describe('renameAnimal', () => {
 
     kennel.renameAnimal('Susan', 'Alan');
 
-    expect(cat.name).toEqual('Alan');
+    expect(cat.name).toEqual('Alan'); // again, this is actually testing the behaviour of the Animal class
   });
 });
