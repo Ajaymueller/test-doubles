@@ -1,5 +1,12 @@
 const Kennel = require('../src/kennel');
 
+// in the bad test examples, we were using an actual instance on Animal in our tests
+// this meant that our tests were brittle - any changes to animal would break the kennel tests
+// we were also actually testing the animal class indirectly
+// following dependency inversion, the way we have designed Kennel means it is not coupled to any single implementation
+// instead it interacts with any type object that implements Animal's interface
+// we can use mocks to provide a fake implementation of Animal's interface, and test how Kennel interacts with it
+
 describe('constructor', () => {
   it('has an empty animals array', () => {
     const kennel = new Kennel();
